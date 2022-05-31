@@ -20,6 +20,6 @@ Se inicia en una screen de login, la cual mediante react router dom permite nave
 
 ### Sobre la api
 
-Utiliza Axios para realizar llamados a la api AccuWeather
+La aplicación utiliza Axios para realizar llamados a la api AccuWeather
 
 
