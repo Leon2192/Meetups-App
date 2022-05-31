@@ -24,7 +24,7 @@ const TemperatureScreen = () => {
     e.preventDefault(e);
     axios
       .get(
-        `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=40UALyt0txsx11rBI6lGuqUgi0mGGvdu&q=${citySearch}`
+        `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=40UALyt0txsx11rBI6lGuqUgi0mGGvdu&q=${citySearch}`
       )
       .then((response) => {
         console.log(response.data);

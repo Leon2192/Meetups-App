@@ -65,11 +65,14 @@ const NavBar = () => {
             </Typography>
 
             <div className="buttonNav">
-              <Link to="/signin">
-                <Button variant="filled">
-                  <strong>Sign In</strong>
-                </Button>
-              </Link>
+              {!user ? (
+                <Link to="/signin">
+                  <Button variant="filled">
+                    <strong>Sign In</strong>
+                  </Button>
+                </Link>
+              ) : null}
+
               <Button variant="filled" onClick={handleAuth}>
                 <strong>Sign Out</strong>
               </Button>

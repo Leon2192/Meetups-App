@@ -33,6 +33,9 @@ const Temperature = ({ cityData }) => {
                 La temperatura hoy es de{" "}
                 {Math.ceil(data.Temperature.Metric.Value)} º
               </h3>
+              <h2>
+                {data.Temperature.Metric.Value < 20 ? "Frío" : "Caluroso"}
+              </h2>
               {data.IsDayTime === true && (
                 <img className="img-weat" src={sol} alt="sun" />
               )}

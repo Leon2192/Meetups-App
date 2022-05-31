@@ -25,8 +25,8 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="https://github.com/Leon2192">
+        Leonardo Manuel Arrieta
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -58,7 +58,11 @@ export default function SignIn() {
       await signInWithEmailAndPassword(auth, email, password).then(
         (authUser) => {
           {
-            rol === 10 ? navigate("/home") : navigate("/homeboth");
+            rol === 10
+              ? navigate("/home")
+              : rol === 20
+              ? navigate("/homeboth")
+              : alert("Por favor, seleccione un rol para ingresar.");
           }
         }
       );
@@ -88,7 +92,7 @@ export default function SignIn() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+          <Avatar sx={{ m: 1, bgcolor: "primary.main" }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
