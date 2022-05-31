@@ -1,4 +1,10 @@
-import { createTheme, ThemeProvider } from "@mui/material";
+import {
+  Box,
+  Container,
+  createTheme,
+  CssBaseline,
+  ThemeProvider,
+} from "@mui/material";
 import React from "react";
 import "../App.css";
 import NavBar from "../components/NavBar";
@@ -17,7 +23,19 @@ const HomeUserandAdmin = () => {
     <div>
       <ThemeProvider theme={darkTheme}>
         <NavBar />
-        <TemperatureScreen />
+        <Container component="main" maxWidth="xs">
+          <CssBaseline />
+          <Box
+            sx={{
+              marginTop: 8,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <TemperatureScreen />
+          </Box>
+        </Container>
       </ThemeProvider>
     </div>
   );

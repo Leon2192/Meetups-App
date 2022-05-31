@@ -51,7 +51,7 @@ const NavBar = () => {
                   src="https://hurin.com.ar/wp-content/uploads/2019/05/CERTIFICACIONES-PRESENCIALES-Garnet-Technology-2019.png"
                   className="navLogo"
                   alt="logo"
-                  width={150}
+                  height={100}
                 />
               </IconButton>
             </Link>
