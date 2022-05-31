@@ -15,7 +15,7 @@ const Weather = ({ cityData }) => {
   useEffect(() => {
     axios
       .get(
-        `http://dataservice.accuweather.com/currentconditions/v1/${cityData.Key}?apikey=40UALyt0txsx11rBI6lGuqUgi0mGGvdu`
+        `https://dataservice.accuweather.com/currentconditions/v1/${cityData.Key}?apikey=40UALyt0txsx11rBI6lGuqUgi0mGGvdu`
       )
       .then((response) => {
         setData(response.data[0]);
