@@ -12,7 +12,7 @@ Para inicializar el modo producción.
 
 ### Dependencias
 
-Mui, React Router Dom, Firebase, Axios, Styles components.
+Mui, React Router Dom, Firebase, Axios, Styled components.
 
 ### Sobre el proyecto
 
