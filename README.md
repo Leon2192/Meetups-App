@@ -1,6 +1,6 @@
 # Aplicación de meetups con accuweather API
 
-El proyecto está desarrollado con React Js, Javascript, Html y Css, MUI y Firebase. Para realizar los llamados a la API utiliza Axios.
+El proyecto está desarrollado con React Js, Javascript, Html y Css, MUI y Firebase. Para realizar los llamados a la API utiliza Axios.El manejador utilizado es NPM.
 
 ## npm start
 
@@ -20,6 +20,6 @@ Se inicia en una screen de login, la cual mediante react router dom permite nave
 
 ### Sobre la api
 
-La aplicación utiliza Axios para realizar llamados a la api AccuWeather
+La aplicación utiliza Axios para realizar llamados a la api AccuWeather.
 
 
