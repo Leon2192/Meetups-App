@@ -10,7 +10,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import { signOut } from "firebase/auth";
-import { Container } from "@mui/material";
 
 const NavBar = () => {
   const [user, setUser] = useState(null);
@@ -35,6 +34,7 @@ const NavBar = () => {
         });
     }
   };
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
